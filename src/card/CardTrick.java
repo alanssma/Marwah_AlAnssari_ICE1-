@@ -25,7 +25,7 @@ public class CardTrick {
             c.setSuit(Card.SUITS[(int) (Math.random() * 4)]); //insert call to random number between 0-3 here
             magicHand[i] = c;
         }
-        //Loop throught and show the 7 random cards
+        //Loop through and show the 7 random cards
         for (int i = 0; i < magicHand.length; i++) {
             System.out.println(magicHand[i].getSuit() + " " + magicHand[i].getValue());
         }
@@ -61,5 +61,8 @@ public class CardTrick {
 
         scanner.close();
     }
-
+        // Hard coded lucky card
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);          
+        luckyCard.setSuit(Card.SUITS[0]);
 }
