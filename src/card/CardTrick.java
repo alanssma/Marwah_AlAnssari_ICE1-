@@ -4,7 +4,7 @@
  */
 package card;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects and then
@@ -50,8 +50,8 @@ public class CardTrick {
         boolean cardInHand = false;
 
         for (Card c : magicHand) {
-            if (c.getValue() == userCard.getValue()
-                    && c.getSuit().equals(userCard.getSuit())) {
+            if (c.getValue() == luckyCard.getValue()
+                    && c.getSuit().equals(luckyCard.getSuit())) {
                 cardInHand = true;
                 break;
             }
@@ -63,7 +63,7 @@ public class CardTrick {
             System.out.println("Sorry, The lucky card is not in the magic hand.");
         }
 
-        scanner.close();
+        // scanner.close();
     }
        
 }
