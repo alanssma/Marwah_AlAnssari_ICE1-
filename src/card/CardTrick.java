@@ -43,17 +43,17 @@ public class CardTrick {
         int suitIndex = scanner.nextInt();
         userCard.setSuit(Card.SUITS[suitIndex]);
 
-        boolean found = false;
+        boolean cardInHand = false;
 
         for (Card c : magicHand) {
             if (c.getValue() == userCard.getValue()
                     && c.getSuit().equals(userCard.getSuit())) {
-                found = true;
+                cardInHand = true;
                 break;
             }
         }
 
-        if (found) {
+        if (cardInHand) {
             System.out.println("Congratulations! Your card is in the magic hand.");
         } else {
             System.out.println("Sorry, your card is not in the magic hand.");
